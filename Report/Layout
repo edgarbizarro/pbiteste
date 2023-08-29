@@ -1,0 +1,2664 @@
+{
+  "id": 8585711,
+  "reportId": 1503673,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "id": 10234497,
+        "name": "RegisteredResources",
+        "type": 1,
+        "items": [
+          {
+            "id": 31988658,
+            "resourcePackageId": 10234497,
+            "type": 100,
+            "path": "Group_347838302874026406.png",
+            "name": "Group_347838302874026406.png",
+            "resourcePackageItemBlobInfoId": 120475663
+          },
+          {
+            "id": 31988659,
+            "resourcePackageId": 10234497,
+            "type": 100,
+            "path": "Marca_GOPLAN740505734513065.png",
+            "name": "Marca_GOPLAN740505734513065.png",
+            "resourcePackageItemBlobInfoId": 120475664
+          }
+        ],
+        "disabled": false
+      }
+    },
+    {
+      "resourcePackage": {
+        "id": 10234498,
+        "name": "SharedResources",
+        "type": 2,
+        "items": [
+          {
+            "id": 31988660,
+            "resourcePackageId": 10234498,
+            "type": 202,
+            "path": "BaseThemes/CY22SU03.json",
+            "name": "CY22SU03"
+          }
+        ],
+        "disabled": false
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": 67532134,
+      "name": "ReportSection",
+      "displayName": "Acompanhamentos de Att",
+      "filters": {
+        "__powerbi-vcs-embedded-json__": []
+      },
+      "ordinal": 0,
+      "visualContainers": [
+        {
+          "id": 1447516377,
+          "x": 189.97794354423408,
+          "y": 144.00299069980278,
+          "z": 1000,
+          "width": 880.0000000000001,
+          "height": 544,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "60da75155abfb12d9759",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 544,
+                    "width": 880.0000000000001,
+                    "x": 189.97794354423408,
+                    "y": 144.00299069980278,
+                    "z": 1000,
+                    "tabOrder": 1000
+                  }
+                }
+              ],
+              "singleVisualGroup": {
+                "displayName": "Group 1",
+                "groupMode": 0
+              }
+            }
+          },
+          "tabOrder": 1000
+        },
+        {
+          "id": 1447516378,
+          "x": 16,
+          "y": 16,
+          "z": 2000,
+          "width": 192.00000000000003,
+          "height": 80,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "0f71fd0780509913da12",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 80,
+                    "width": 192.00000000000003,
+                    "x": 16,
+                    "y": 16,
+                    "z": 2000,
+                    "tabOrder": 0
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "multiRowCard",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "Count(dPaineis.id)"
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "f",
+                      "Entity": "dPaineis",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "id"
+                          }
+                        },
+                        "Function": 2
+                      },
+                      "Name": "Count(dPaineis.id)"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "id"
+                            }
+                          },
+                          "Function": 2
+                        }
+                      }
+                    }
+                  ]
+                },
+                "columnProperties": {
+                  "Sum(fPaineis.id)": {
+                    "displayName": "Qtd. Paineis"
+                  },
+                  "Count(dPaineis.id)": {
+                    "displayName": "QTD de Relatorios"
+                  }
+                },
+                "drillFilterOtherVisuals": true,
+                "hasDefaultSort": true,
+                "objects": {
+                  "categoryLabels": [
+                    {
+                      "properties": {
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "dataLabels": [
+                    {
+                      "properties": {
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "fontSize": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "25D"
+                            }
+                          }
+                        },
+                        "fontFamily": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 3,
+                                  "Percent": -0.5
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "parentGroupName": "60da75155abfb12d9759"
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "f",
+                          "Entity": "dPaineis",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "id"
+                              }
+                            },
+                            "Function": 2
+                          },
+                          "Name": "Count(dPaineis.id)"
+                        }
+                      ],
+                      "OrderBy": [
+                        {
+                          "Direction": 2,
+                          "Expression": {
+                            "Aggregation": {
+                              "Expression": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "id"
+                                }
+                              },
+                              "Function": 2
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {}
+                        }
+                      },
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "categoryLabels": [
+                  {
+                    "properties": {
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dataLabels": [
+                  {
+                    "properties": {
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "25D"
+                          }
+                        }
+                      },
+                      "fontFamily": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Values": [
+                  0
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "QTD de Relatorios",
+                    "Name": "Count(dPaineis.id)",
+                    "Type": 3
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "QTD de Relatorios",
+                  "queryName": "Count(dPaineis.id)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "sort": 2,
+                  "sortOrder": 0,
+                  "type": {
+                    "category": null,
+                    "underlyingType": 260
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dPaineis"
+                            }
+                          },
+                          "Property": "id"
+                        }
+                      },
+                      "Function": 2
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 1447516379,
+          "x": 16,
+          "y": 128,
+          "z": 3000,
+          "width": 848,
+          "height": 400,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "41e34ead38e2caf2d21f",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 400,
+                    "width": 848,
+                    "x": 16,
+                    "y": 128,
+                    "z": 3000,
+                    "tabOrder": 1000
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "tableEx",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "fFranqueados.name"
+                    },
+                    {
+                      "queryRef": "fPaineis.name"
+                    },
+                    {
+                      "queryRef": "dCalendario.data"
+                    },
+                    {
+                      "queryRef": "fStatus_bi.horaRef"
+                    },
+                    {
+                      "queryRef": "fStatus_bi.status"
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "f",
+                      "Entity": "dPaineis",
+                      "Type": 0
+                    },
+                    {
+                      "Name": "f1",
+                      "Entity": "dFranqueados",
+                      "Type": 0
+                    },
+                    {
+                      "Name": "d",
+                      "Entity": "dCalendario",
+                      "Type": 0
+                    },
+                    {
+                      "Name": "f2",
+                      "Entity": "fStatus_bi",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "name"
+                      },
+                      "Name": "fPaineis.name"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f1"
+                          }
+                        },
+                        "Property": "name"
+                      },
+                      "Name": "fFranqueados.name"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "data"
+                      },
+                      "Name": "dCalendario.data"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f2"
+                          }
+                        },
+                        "Property": "horaRef"
+                      },
+                      "Name": "fStatus_bi.horaRef"
+                    },
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f2"
+                          }
+                        },
+                        "Property": "status"
+                      },
+                      "Name": "fStatus_bi.status"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "d"
+                            }
+                          },
+                          "Property": "data"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "columnProperties": {
+                  "fFranqueados.name": {
+                    "displayName": "Franqueado"
+                  },
+                  "fPaineis.name": {
+                    "displayName": "Relatório"
+                  },
+                  "dCalendario.data": {
+                    "displayName": "Data Att"
+                  },
+                  "fStatus_bi.horaRef": {
+                    "displayName": "Hora Att"
+                  },
+                  "fStatus_bi.status": {
+                    "displayName": "Status"
+                  }
+                },
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "columnWidth": [
+                    {
+                      "properties": {
+                        "value": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "159.18631910303822D"
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "metadata": "fStatus_bi.horaRef"
+                      }
+                    },
+                    {
+                      "properties": {
+                        "value": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "89.73274482442451D"
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "metadata": "dCalendario.data"
+                      }
+                    },
+                    {
+                      "properties": {
+                        "value": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "325.3090128755365D"
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "metadata": "fPaineis.name"
+                      }
+                    },
+                    {
+                      "properties": {
+                        "value": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "155.54935622317595D"
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "metadata": "fFranqueados.name"
+                      }
+                    }
+                  ],
+                  "values": [
+                    {
+                      "properties": {
+                        "fontColorPrimary": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "fontColorSecondary": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "grid": [
+                    {
+                      "properties": {
+                        "gridHorizontal": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "rowPadding": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "4D"
+                            }
+                          }
+                        },
+                        "gridHorizontalColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "Literal": {
+                                  "Value": "'#647F98'"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "columnHeaders": [
+                    {
+                      "properties": {
+                        "fontColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "fontFamily": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                            }
+                          }
+                        },
+                        "fontSize": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "11D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "stylePreset": [
+                    {
+                      "properties": {
+                        "name": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'None'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "parentGroupName": "60da75155abfb12d9759"
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "tabOrder": 1000,
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "f",
+                          "Entity": "dPaineis",
+                          "Type": 0
+                        },
+                        {
+                          "Name": "f1",
+                          "Entity": "dFranqueados",
+                          "Type": 0
+                        },
+                        {
+                          "Name": "d",
+                          "Entity": "dCalendario",
+                          "Type": 0
+                        },
+                        {
+                          "Name": "f2",
+                          "Entity": "fStatus_bi",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "name"
+                          },
+                          "Name": "fPaineis.name"
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f1"
+                              }
+                            },
+                            "Property": "name"
+                          },
+                          "Name": "fFranqueados.name"
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "data"
+                          },
+                          "Name": "dCalendario.data"
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f2"
+                              }
+                            },
+                            "Property": "horaRef"
+                          },
+                          "Name": "fStatus_bi.horaRef"
+                        },
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f2"
+                              }
+                            },
+                            "Property": "status"
+                          },
+                          "Name": "fStatus_bi.status"
+                        }
+                      ],
+                      "OrderBy": [
+                        {
+                          "Direction": 2,
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "data"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0,
+                              1,
+                              2,
+                              3,
+                              4
+                            ],
+                            "Subtotal": 1
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {
+                            "Count": 500
+                          }
+                        }
+                      },
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "columnWidth": [
+                  {
+                    "properties": {
+                      "value": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "159.18631910303822D"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "fStatus_bi.horaRef"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "value": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "89.73274482442451D"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "dCalendario.data"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "value": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "325.3090128755365D"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "fPaineis.name"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "value": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "155.54935622317595D"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "fFranqueados.name"
+                    }
+                  }
+                ],
+                "values": [
+                  {
+                    "properties": {
+                      "fontColorPrimary": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "fontColorSecondary": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "grid": [
+                  {
+                    "properties": {
+                      "gridHorizontal": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "true"
+                          }
+                        }
+                      },
+                      "rowPadding": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "4D"
+                          }
+                        }
+                      },
+                      "gridHorizontalColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "Literal": {
+                                "Value": "'#647F98'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "columnHeaders": [
+                  {
+                    "properties": {
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "fontFamily": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "11D"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Values": [
+                  1,
+                  0,
+                  2,
+                  3,
+                  4
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Relatório",
+                    "Name": "fPaineis.name",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "Franqueado",
+                    "Name": "fFranqueados.name",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "Data Att",
+                    "Name": "dCalendario.data",
+                    "Type": 4,
+                    "Format": "d"
+                  },
+                  {
+                    "Restatement": "Hora Att",
+                    "Name": "fStatus_bi.horaRef",
+                    "Type": 4,
+                    "Format": "T"
+                  },
+                  {
+                    "Restatement": "Status",
+                    "Name": "fStatus_bi.status",
+                    "Type": 2048
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 1,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 2,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 3,
+                      "isActive": false
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 4,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Relatório",
+                  "queryName": "fPaineis.name",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dPaineis"
+                        }
+                      },
+                      "Property": "name"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Franqueado",
+                  "queryName": "fFranqueados.name",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dFranqueados"
+                        }
+                      },
+                      "Property": "name"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Data Att",
+                  "format": "d",
+                  "queryName": "dCalendario.data",
+                  "roles": {
+                    "Values": true
+                  },
+                  "sort": 2,
+                  "sortOrder": 0,
+                  "type": {
+                    "category": null,
+                    "underlyingType": 519
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dCalendario"
+                        }
+                      },
+                      "Property": "data"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Hora Att",
+                  "format": "T",
+                  "queryName": "fStatus_bi.horaRef",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 519
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fStatus_bi"
+                        }
+                      },
+                      "Property": "horaRef"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Status",
+                  "queryName": "fStatus_bi.status",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fStatus_bi"
+                        }
+                      },
+                      "Property": "status"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 1447516380,
+          "x": 208,
+          "y": 16,
+          "z": 4000,
+          "width": 208.00000000000003,
+          "height": 80,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "d4f1f06b7eb9df91e724",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 80,
+                    "width": 208.00000000000003,
+                    "x": 208,
+                    "y": 16,
+                    "z": 4000,
+                    "tabOrder": 2000
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "slicer",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "fFranqueados.name",
+                      "active": true
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "f",
+                      "Entity": "dFranqueados",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "name"
+                      },
+                      "Name": "fFranqueados.name"
+                    }
+                  ]
+                },
+                "columnProperties": {
+                  "fFranqueados.name": {
+                    "displayName": "Franqueado"
+                  }
+                },
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "general": [
+                    {
+                      "properties": {}
+                    }
+                  ],
+                  "header": [
+                    {
+                      "properties": {
+                        "fontColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "items": [
+                    {
+                      "properties": {
+                        "background": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 3,
+                                  "Percent": -0.5
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "parentGroupName": "60da75155abfb12d9759"
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "tabOrder": 2000,
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "f",
+                          "Entity": "dFranqueados",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "name"
+                          },
+                          "Name": "fFranqueados.name"
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {}
+                        }
+                      },
+                      "IncludeEmptyGroups": true,
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'Dropdown'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "general": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "header": [
+                  {
+                    "properties": {
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "items": [
+                  {
+                    "properties": {
+                      "background": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Values": [
+                  0
+                ]
+              },
+              "projectionActiveItems": {
+                "Values": [
+                  {
+                    "queryRef": "fFranqueados.name",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Franqueado",
+                    "Name": "fFranqueados.name",
+                    "Type": 2048
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": true
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Franqueado",
+                  "queryName": "fFranqueados.name",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dFranqueados"
+                        }
+                      },
+                      "Property": "name"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 1447516381,
+          "x": 640,
+          "y": 16,
+          "z": 5000,
+          "width": 224,
+          "height": 80,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "19be06657110740b6434",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 80,
+                    "width": 224,
+                    "x": 640,
+                    "y": 16,
+                    "z": 5000,
+                    "tabOrder": 3000
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "slicer",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "fPaineis.name",
+                      "active": true
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "f",
+                      "Entity": "dPaineis",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "name"
+                      },
+                      "Name": "fPaineis.name"
+                    }
+                  ]
+                },
+                "columnProperties": {
+                  "fFranqueados.name": {
+                    "displayName": "Franqueado"
+                  },
+                  "fPaineis.name": {
+                    "displayName": "Relatório"
+                  }
+                },
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "general": [
+                    {
+                      "properties": {}
+                    }
+                  ],
+                  "header": [
+                    {
+                      "properties": {
+                        "fontColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "items": [
+                    {
+                      "properties": {
+                        "background": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 3,
+                                  "Percent": -0.5
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "parentGroupName": "60da75155abfb12d9759"
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "tabOrder": 3000,
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "f",
+                          "Entity": "dPaineis",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "name"
+                          },
+                          "Name": "fPaineis.name"
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {}
+                        }
+                      },
+                      "IncludeEmptyGroups": true,
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'Dropdown'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "general": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "header": [
+                  {
+                    "properties": {
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "items": [
+                  {
+                    "properties": {
+                      "background": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Values": [
+                  0
+                ]
+              },
+              "projectionActiveItems": {
+                "Values": [
+                  {
+                    "queryRef": "fPaineis.name",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Relatório",
+                    "Name": "fPaineis.name",
+                    "Type": 2048
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": true
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Relatório",
+                  "queryName": "fPaineis.name",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dPaineis"
+                        }
+                      },
+                      "Property": "name"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 1447516382,
+          "x": 416,
+          "y": 16,
+          "z": 6000,
+          "width": 224,
+          "height": 80,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "5ecaa889c9e20d7c5d51",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 80,
+                    "width": 224,
+                    "x": 416,
+                    "y": 16,
+                    "z": 6000,
+                    "tabOrder": 4000
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "slicer",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "fStatus_bi.dataRef",
+                      "active": true
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "f",
+                      "Entity": "fStatus_bi",
+                      "Type": 0
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "dataRef"
+                      },
+                      "Name": "fStatus_bi.dataRef"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 1,
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "f"
+                            }
+                          },
+                          "Property": "dataRef"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "columnProperties": {
+                  "fFranqueados.name": {
+                    "displayName": "Franqueado"
+                  },
+                  "fStatus_bi.dataRef": {
+                    "displayName": "Data Att"
+                  }
+                },
+                "drillFilterOtherVisuals": true,
+                "hasDefaultSort": true,
+                "objects": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "general": [
+                    {
+                      "properties": {}
+                    }
+                  ],
+                  "header": [
+                    {
+                      "properties": {
+                        "fontColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "items": [
+                    {
+                      "properties": {
+                        "background": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 3,
+                                  "Percent": -0.5
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "parentGroupName": "60da75155abfb12d9759"
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "tabOrder": 4000,
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "f",
+                          "Entity": "fStatus_bi",
+                          "Type": 0
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "dataRef"
+                          },
+                          "Name": "fStatus_bi.dataRef"
+                        }
+                      ],
+                      "OrderBy": [
+                        {
+                          "Direction": 1,
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "dataRef"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {}
+                        }
+                      },
+                      "IncludeEmptyGroups": true,
+                      "Version": 1
+                    },
+                    "ExecutionMetricsKind": 1
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'Dropdown'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "general": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "header": [
+                  {
+                    "properties": {
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "items": [
+                  {
+                    "properties": {
+                      "background": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Values": [
+                  0
+                ]
+              },
+              "projectionActiveItems": {
+                "Values": [
+                  {
+                    "queryRef": "fStatus_bi.dataRef",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Data Att",
+                    "Name": "fStatus_bi.dataRef",
+                    "Type": 4,
+                    "Format": "d"
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": true
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Data Att",
+                  "format": "d",
+                  "queryName": "fStatus_bi.dataRef",
+                  "roles": {
+                    "Values": true
+                  },
+                  "sort": 1,
+                  "sortOrder": 0,
+                  "type": {
+                    "category": null,
+                    "underlyingType": 519
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fStatus_bi"
+                        }
+                      },
+                      "Property": "dataRef"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 1447516383,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "width": 880,
+          "height": 544,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "e614ae7205e1b3c4e1c1",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 544,
+                    "width": 880,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "tabOrder": 5000
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "shape",
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "shape": [
+                    {
+                      "properties": {
+                        "tileShape": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'rectangle'"
+                            }
+                          }
+                        },
+                        "roundEdge": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "8L"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "rotation": [
+                    {
+                      "properties": {
+                        "shapeAngle": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "0L"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "fill": [
+                    {
+                      "properties": {
+                        "fillColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 2,
+                                  "Percent": -0.5
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "transparency": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "10D"
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "id": "default"
+                      }
+                    }
+                  ],
+                  "outline": [
+                    {
+                      "properties": {
+                        "lineColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.3
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "id": "default"
+                      }
+                    }
+                  ]
+                }
+              },
+              "parentGroupName": "60da75155abfb12d9759"
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "tabOrder": 5000
+        },
+        {
+          "id": 1447516384,
+          "x": 0,
+          "y": 0,
+          "z": 1000,
+          "width": 880.0000000000001,
+          "height": 112,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "4963372302e2bb78edee",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "height": 112,
+                    "width": 880.0000000000001,
+                    "x": 0,
+                    "y": 0,
+                    "z": 1000,
+                    "tabOrder": 6000
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "shape",
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "shape": [
+                    {
+                      "properties": {
+                        "tileShape": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'tabRoundTopCorners'"
+                            }
+                          }
+                        },
+                        "tabRoundCornerTop": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "15L"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "rotation": [
+                    {
+                      "properties": {
+                        "shapeAngle": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "0L"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "fill": [
+                    {
+                      "properties": {
+                        "fillColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 3,
+                                  "Percent": -0.5
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "id": "default"
+                      }
+                    }
+                  ],
+                  "outline": [
+                    {
+                      "properties": {
+                        "lineColor": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.3
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "selector": {
+                        "id": "default"
+                      }
+                    }
+                  ]
+                }
+              },
+              "parentGroupName": "60da75155abfb12d9759"
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "tabOrder": 6000
+        },
+        {
+          "id": 1447516385,
+          "x": 16,
+          "y": 16,
+          "z": 0,
+          "width": 223.99999999999997,
+          "height": 128,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "bee08e15b5d85b138ff6",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 16,
+                    "y": 16,
+                    "z": 0,
+                    "width": 223.99999999999997,
+                    "height": 128,
+                    "tabOrder": 0
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "image",
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "general": [
+                    {
+                      "properties": {
+                        "imageUrl": {
+                          "expr": {
+                            "ResourcePackageItem": {
+                              "PackageName": "RegisteredResources",
+                              "PackageType": 1,
+                              "ItemName": "Marca_GOPLAN740505734513065.png"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          }
+        }
+      ],
+      "objectId": "762c728b-8edc-41d8-a8ca-ad08393f3e13",
+      "config": {
+        "__powerbi-vcs-embedded-json__": {
+          "objects": {
+            "outspace": [
+              {
+                "properties": {
+                  "image": {
+                    "image": {
+                      "name": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'Group 34.png'"
+                          }
+                        }
+                      },
+                      "url": {
+                        "expr": {
+                          "ResourcePackageItem": {
+                            "PackageName": "RegisteredResources",
+                            "PackageType": 1,
+                            "ItemName": "Group_347838302874026406.png"
+                          }
+                        }
+                      },
+                      "scaling": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'Fit'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "config": {
+    "__powerbi-vcs-embedded-json__": {
+      "version": "5.37",
+      "themeCollection": {
+        "baseTheme": {
+          "name": "CY22SU03",
+          "version": "5.32",
+          "type": 2
+        }
+      },
+      "activeSectionIndex": 0,
+      "defaultDrillFilterOtherVisuals": true,
+      "linguisticSchemaSyncVersion": 2,
+      "settings": {
+        "useNewFilterPaneExperience": true,
+        "allowChangeFilterTypes": true,
+        "useStylableVisualContainerHeader": true,
+        "exportDataMode": 1
+      },
+      "objects": {
+        "section": [
+          {
+            "properties": {
+              "verticalAlignment": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Top'"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "layoutOptimization": 0,
+  "publicCustomVisuals": []
+}
